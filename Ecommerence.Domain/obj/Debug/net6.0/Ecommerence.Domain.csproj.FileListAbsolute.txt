@@ -1,0 +1,15 @@
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\bin\Debug\net6.0\Ecommerence.Domain.deps.json
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\bin\Debug\net6.0\Ecommerence.Domain.dll
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\bin\Debug\net6.0\Ecommerence.Domain.pdb
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\bin\Debug\net6.0\Ecommerence.Utils.dll
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\bin\Debug\net6.0\Ecommerence.Utils.pdb
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.csproj.AssemblyReference.cache
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.AssemblyInfoInputs.cache
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.AssemblyInfo.cs
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.csproj.CopyComplete
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.dll
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\refint\Ecommerence.Domain.dll
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\Ecommerence.Domain.pdb
+C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Domain\obj\Debug\net6.0\ref\Ecommerence.Domain.dll

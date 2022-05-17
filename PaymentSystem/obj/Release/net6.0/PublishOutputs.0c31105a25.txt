@@ -1,0 +1,13 @@
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\PaymentSystem.exe
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\appsettings.json
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\PaymentSystem.dll
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\PaymentSystem.deps.json
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\PaymentSystem.runtimeconfig.json
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\PaymentSystem.pdb
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\Microsoft.OpenApi.dll
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\Mollie.Api.dll
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Hisham\source\repos\Ecommerence\PaymentSystem\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

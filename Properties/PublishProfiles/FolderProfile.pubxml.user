@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Hisham\source\repos\Ecommerence\DockerFile</_PublishTargetUrl>
+    <History>True|2022-04-13T15:00:15.3996078Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="dbi449635">
+      <Value>Data Source=studmysql01.fhict.local%3bInitial Catalog=dbi449635%3bUser Id=dbi449635%3bpassword=Shutdown123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

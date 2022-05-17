@@ -1,0 +1,11 @@
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\ProductsApi.exe
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\appsettings.json
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\ProductsApi.dll
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\ProductsApi.deps.json
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\ProductsApi.runtimeconfig.json
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\ProductsApi.pdb
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\Microsoft.OpenApi.dll
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Hisham\source\repos\Ecommerence\ProductsApi\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

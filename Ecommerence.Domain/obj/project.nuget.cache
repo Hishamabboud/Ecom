@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pJsBqgsyPmR/HXVEbLYHu27eYW0ZHUjrkohjgkNc9szf/NnBG7ptORHqeVjtTTWTiZqyvTy5rQjbOdDrl7O09w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hisham\\source\\repos\\Ecommerence\\Ecommerence.Domain\\Ecommerence.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hisham\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Hisham\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
