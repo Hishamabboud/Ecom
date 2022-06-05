@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5AZ1wCx68rXrX9vGZaIOHFPjebnSuj069dH1Gw1eLsDayuiaVta6maZDJ9VAtTFbss0v2QaegXDE7xwbbNm5SA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hisham\\source\\repos\\Ecommerence\\Ecom\\Ecom.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hisham\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\6.0.4\\microsoft.aspnetcore.spaproxy.6.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

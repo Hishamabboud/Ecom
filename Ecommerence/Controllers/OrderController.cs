@@ -11,7 +11,7 @@ using Ecommerence.Domain.Enums;
 using Ecommerence.Domain.Commands.Order;
 using Ecommerence.Controllers.Common;
 
-namespace Ecommerence.Controllers
+namespace Ecommerence.Controller
 {
 
     [ApiController]
