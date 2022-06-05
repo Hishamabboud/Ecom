@@ -1,8 +1,0 @@
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.csproj.AssemblyReference.cache
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.AssemblyInfoInputs.cache
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.AssemblyInfo.cs
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.csproj.CoreCompileInputs.cache
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.RazorAssemblyInfo.cache
-C:\Users\Hisham\source\repos\Ecommerence\Ecommerence.Web\obj\Debug\net6.0\Ecommerence.Web.RazorAssemblyInfo.cs
