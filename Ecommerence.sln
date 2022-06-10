@@ -5,8 +5,6 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerence", "Ecommerence\Ecommerence.csproj", "{531928BE-A4CA-4687-85AD-DDB0E3F2DE46}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CustomerDB", "CustomerDB\CustomerDB.sqlproj", "{907BB2A1-C5A5-41EB-9D45-1EEEE6C78B26}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerence.Domain", "Ecommerence.Domain\Ecommerence.Domain.csproj", "{C8D74968-D767-4B7E-BE25-AFACA857FD46}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerence.Bus", "Ecommerence.Bus\Ecommerence.Bus.csproj", "{CE558942-65A2-4E7E-9128-6682F763C841}"
@@ -14,8 +12,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerence.Repository", "Ecommerence.Repository\Ecommerence.Repository.csproj", "{7E822DB4-CD24-4E47-8730-2F2B6DD75443}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerence.Utils", "Ecommerence.Utils\Ecommerence.Utils.csproj", "{140F99CC-B909-4595-8B22-3D2053E36184}"
-EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Ecomweb", "Ecomweb\Ecomweb.esproj", "{67B8B74F-6858-4B11-8A57-FF57DADACB1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
