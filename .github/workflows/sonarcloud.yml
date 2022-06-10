@@ -1,4 +1,4 @@
-name: Build
+name: Sonar Cloud
 on:
   push:
     branches:
@@ -43,5 +43,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Hishamabboud_Ecom" /o:"hishamabboud" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          <docker build . --file Dockerfile --tag ecommerence:$(date +%s)>
+          docker build . --file Dockerfile --tag ecommerence:$(date +%s)
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
