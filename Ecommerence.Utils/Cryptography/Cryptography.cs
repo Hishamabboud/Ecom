@@ -45,7 +45,7 @@ namespace Ecommerence.Utils.Cryptography
 
         private static TripleDESCryptoServiceProvider GetProvider()
         {
-            var result = new TripleDESCryptoServiceProvider();
+            var result = new AesCryptoServiceProvider();
             result.Key = GetKeyHash();
             result.Mode = CipherMode.ECB;
             result.Padding = PaddingMode.PKCS7;
