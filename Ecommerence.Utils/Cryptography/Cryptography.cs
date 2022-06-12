@@ -43,7 +43,7 @@ namespace Ecommerence.Utils.Cryptography
             }
         }
 
-        private static TripleDESCryptoServiceProvider GetProvider()
+        private static AesCryptoServiceProvider GetProvider()
         {
             var result = new AesCryptoServiceProvider();
             result.Key = GetKeyHash();
