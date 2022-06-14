@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "https://127.0.0.1:7019/api/User",
+			"name": "http://LocalHost:7019/api/User",
 			"event": [
 				{
 					"listen": "test",
