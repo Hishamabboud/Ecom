@@ -32,7 +32,7 @@ jobs:
       run: | 
         npm run start:dev &
         sleep 60
-        newman run "Example.postman_collection.json"
+        newman run "tests/apitesting.postman_collection"
         env:
          MONGO_URI: "mongodb://127.0.0.1:27017/test-db"
          PORT: "3000"
