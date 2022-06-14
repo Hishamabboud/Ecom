@@ -50,7 +50,6 @@ jobs:
         cd api && flask run &
         sleep 2
         cd Tests && newman run apitesting.postman_collection.json
-        kill -9 `lsof -i:5000 -t`
       env:
         FLASK_ENV: development
         API_HOST: LocalHost
