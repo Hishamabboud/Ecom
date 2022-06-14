@@ -54,12 +54,4 @@ jobs:
        - name: run postman tests
          uses: matt-ball/newman-action@master
           with:
-           collection: "apitesting.postman_collection.json"
-
-      env:
-        FLASK_ENV: development
-        API_HOST: 0.0.0.0
-        FLASK_APP: main.py
-        DB_NAME: ahm
-        DB_HOST: localhost
-        CI: true
+           collection: "apitesting.postman_collection.json
