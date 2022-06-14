@@ -51,7 +51,7 @@ jobs:
       run: |
         dotnet build &
         sleep 2
-        cd Tests && newman run apitesting.postman_collection.json -e ahm-local.postman_environment.json
+        cd Tests && newman run apitesting.postman_collection.json -e Environment.postman_environment
       env:
         FLASK_ENV: development
         API_HOST: 0.0.0.0
