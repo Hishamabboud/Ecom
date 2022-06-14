@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "https://127.0.0.1:5019/api/User",
+			"name": "http://127.0.0.1:5019/api/User",
 			"event": [
 				{
 					"listen": "test",
@@ -48,8 +48,8 @@
 					}
 				},
 				"url": {
-					"raw": "https://127.0.0.1:5019/api/User",
-					"protocol": "https",
+					"raw": "http://127.0.0.1:5019/api/User",
+					"protocol": "http",
 					"host": [
 						"127.0.0.1"
 					],
@@ -90,8 +90,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://127.0.0.1:5019/api/User",
-					"protocol": "https",
+					"raw": "http://127.0.0.1:5019/api/User",
+					"protocol": "http",
 					"host": [
 						"127.0.0.1"
 					],
@@ -136,8 +136,8 @@
 					}
 				},
 				"url": {
-					"raw": "https://127.0.0.1:5019/api/User",
-					"protocol": "https",
+					"raw": "http://127.0.0.1:5019/api/User",
+					"protocol": "http",
 					"host": [
 						"127.0.0.1"
 					],
@@ -190,8 +190,8 @@
 					}
 				},
 				"url": {
-					"raw": "https://127.0.0.1:5019/api/Auth",
-					"protocol": "https",
+					"raw": "http://127.0.0.1:5019/api/Auth",
+					"protocol": "http",
 					"host": [
 						"127.0.0.1"
 					],
@@ -231,8 +231,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://127.0.0.1:5019/api/Product",
-					"protocol": "https",
+					"raw": "http://127.0.0.1:5019/api/Product",
+					"protocol": "http",
 					"host": [
 						"127.0.0.1"
 					],
@@ -278,8 +278,8 @@
 					}
 				},
 				"url": {
-					"raw": "https://127.0.0.1:5019/api/Product",
-					"protocol": "https",
+					"raw": "http://127.0.0.1:5019/api/Product",
+					"protocol": "http",
 					"host": [
 						"127.0.0.1"
 					],
