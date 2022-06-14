@@ -49,6 +49,7 @@ jobs:
 
     - name: Run the API and Postman's tests
       run: |
+        dotnet run
         cd Tests && newman run apitesting.postman_collection.json
       env:
         FLASK_ENV: development
