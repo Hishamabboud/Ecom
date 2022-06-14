@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://LocalHost:7019/api/User",
+			"name": "http://LocalHost:5019/api/User",
 			"event": [
 				{
 					"listen": "test",
@@ -48,12 +48,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/User",
+					"raw": "https://localhost:5019/api/User",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7019",
+					"port": "5019",
 					"path": [
 						"api",
 						"User"
@@ -90,12 +90,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7019/api/User",
+					"raw": "https://localhost:5019/api/User",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7019",
+					"port": "5019",
 					"path": [
 						"api",
 						"User"
@@ -136,12 +136,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/User",
+					"raw": "https://localhost:5019/api/User",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7019",
+					"port": "5019",
 					"path": [
 						"api",
 						"User"
@@ -190,12 +190,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/Auth",
+					"raw": "https://localhost:5019/api/Auth",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7019",
+					"port": "5019",
 					"path": [
 						"api",
 						"Auth"
@@ -231,12 +231,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7019/api/Product",
+					"raw": "https://localhost:5019/api/Product",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7019",
+					"port": "5019",
 					"path": [
 						"api",
 						"Product"
@@ -278,12 +278,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/Product",
+					"raw": "https://localhost:5019/api/Product",
 					"protocol": "https",
 					"host": [
 						"localhost"
 					],
-					"port": "7019",
+					"port": "5019",
 					"path": [
 						"api",
 						"Product"
