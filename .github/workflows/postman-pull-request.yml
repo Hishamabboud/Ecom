@@ -40,7 +40,7 @@ jobs:
       run: |
         cd api && flask run &
         sleep 2
-        cd tests && ./node_modules/newman/bin/newman.js run apitesting.postman_collection
+        cd tests run apitesting.postman_collection
         kill -9 `lsof -i:5000 -t`
       env:
         FLASK_ENV: development
