@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "610976e1-53e8-4d0a-a373-fa01c4197da6",
+		"name": "apitesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21457316"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7019/api/User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response is less than 300ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjpbIkhpYWhhbUBob3RtYWlsLmNvbSIsIkhpc2hhbSJdLCJuYW1laWQiOiJmM2Y5NjhlNi0wNTg1LTRmMTYtMTM0MS0wOGRhNGM5OTM5NTgiLCJlbWFpbCI6IkhpYWhhbUBob3RtYWlsLmNvbSIsInJvbGUiOiJDdXN0b21lciIsImp0aSI6IjBhOTlmODlkYmE3ZTQxODk4YTk4NzZjYmI4Y2VkY2Q0IiwidW5pcXVlX25hbWUiOiJmM2Y5NjhlNi0wNTg1LTRmMTYtMTM0MS0wOGRhNGM5OTM5NTgiLCJuYmYiOjE2NTUyMDYwODcsImV4cCI6MTY1NTIwNjM4NywiaWF0IjoxNjU1MjA2MDg3fQ.Ck-AdFxCUl4n2drgMm70Vq6N8RaywxcV1zAOoVvtG49Vl0U3c3z5hQADGvVKG5h30EfvPQWPBIzAAumZWe6TsBwr_MbtXPkT5tv7PTwfq51O0YIBbgHvVMzH8a-fSaZHdVbLt-J4lsS5cAhllrxGOmSHR6SH8DsW8tSe_2OeiwQX3Zz5HvXvf4cvRsieEODIWaosyDpRXKi8V9r7vENHuPmalvte8Wfb6q88G29Cxuidwt07BwKjcf12mlfXRdwWWBMZOZ0lAtASL1nXhhWs1Ww65lQfuLzdCfqkmfOxjNKnD7c8QLUbgJjXgs4RLgYoIdxF_1Knoy9D7e63io3uIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"hisham\",\r\n  \"email\": \"hiaham123456@hotmail.com\",\r\n  \"password\": \"killer123\",\r\n  \"passwordConfirmation\": \"killer123\",\r\n  \"profile\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7019/api/User",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7019",
+					"path": [
+						"api",
+						"User"
+					]
+				},
+				"description": "post"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is applicaton json\", function () {\r",
+							"\t pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response is less than 300ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7019/api/User",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7019",
+					"path": [
+						"api",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response is less than 300ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(6000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"0a9bde9e-b472-4360-cc47-08da2ce88714\",\r\n  \"name\": \"Hishaa\",\r\n  \"email\": \"Hiaham123@hotmail.com\",\r\n  \"profile\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7019/api/User",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7019",
+					"path": [
+						"api",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"response is less than 300ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"Hiaham@hotmail.com\",\r\n  \"password\": \"killer123\",\r\n  \"refreshToken\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7019/api/Auth",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7019",
+					"path": [
+						"api",
+						"Auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is applicaton json\", function () {\r",
+							"\t pm.response.to.be.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response is less than 300ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7019/api/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7019",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"response is less than 300ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"small bracelet\",\r\n  \"description\": \"jewels included\",\r\n  \"price\": 100,\r\n  \"picturesUrls\": [\r\n    \"string\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7019/api/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7019",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
