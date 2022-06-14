@@ -1,7 +1,7 @@
 # Name of the GitHub Actions
 name: Continuous Test
  
-# Set the actions that triggers the workflow
+# Set the actions that triggers the workflo
 on:
 # Trigger the workflow on the push event, only in dev branch
   push:
