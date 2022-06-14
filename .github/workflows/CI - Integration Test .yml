@@ -51,7 +51,11 @@ jobs:
           docker run -d -p 3005:80 -v ${{ github.workspace }}/db.json:/data/db.json clue/json-server
     - name: Run the API and Postman's tests
       run: |
-        cd Tests && newman run apitesting.postman_collection.json -e Environment.postman_environment
+       - name: run postman tests
+         uses: matt-ball/newman-action@master
+          with:
+           collection: "apitesting.postman_collection.json"
+
       env:
         FLASK_ENV: development
         API_HOST: 0.0.0.0
