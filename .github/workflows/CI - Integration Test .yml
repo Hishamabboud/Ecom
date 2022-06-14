@@ -46,11 +46,11 @@ jobs:
       run: npm install --prefix tests/postman/
     - name: Install wait-on package
       run: npm install --prefix wait-on
-
+    - name: start the app
+        run:|
+          docker run -d -p 3005:80 -v ${{ github.workspace }}/db.json:/data/db.json clue/json-server
     - name: Run the API and Postman's tests
       run: |
-        dotnet build &
-        sleep 2
         cd Tests && newman run apitesting.postman_collection.json -e Environment.postman_environment
       env:
         FLASK_ENV: development
