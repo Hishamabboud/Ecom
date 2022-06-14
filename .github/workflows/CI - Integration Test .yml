@@ -51,10 +51,10 @@ jobs:
       run: |
         dotnet build &
         sleep 2
-        cd Tests && newman run apitesting.postman_collection.json
+        cd Tests && newman run apitesting.postman_collection.json -e ahm-local.postman_environment.json
       env:
         FLASK_ENV: development
-        API_HOST: 127.0.0.1:5019
+        API_HOST: 0.0.0.0
         FLASK_APP: main.py
         DB_NAME: ahm
         DB_HOST: localhost
