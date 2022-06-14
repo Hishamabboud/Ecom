@@ -44,7 +44,7 @@ jobs:
       # Run postman collection
       - name: Run Postman Collection        
         run: |
-            cd Tests && newman run apitesting.postman_collection
+            cd Tests && newman run apitesting.postman_collection.json
      
       # Upload the reports to TestArtifacts directory
       - name: Output the results
