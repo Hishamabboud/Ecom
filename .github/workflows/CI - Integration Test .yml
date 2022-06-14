@@ -49,9 +49,7 @@ jobs:
 
     - name: Run the API and Postman's tests
       run: |
-        cd api && flask run &
-        sleep 2
-        cd Tests && wait-on http://127.0.0.1:5019 && newman run apitesting.postman_collection.json
+        cd Tests && newman run apitesting.postman_collection.json
       env:
         FLASK_ENV: development
         API_HOST: 127.0.0.1:5019
