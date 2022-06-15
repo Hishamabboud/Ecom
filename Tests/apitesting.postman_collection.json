@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://127.0.0.1:5019/api/User",
+			"name": "https://localhost:7019/api/User",
 			"event": [
 				{
 					"listen": "test",
@@ -48,12 +48,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5019/api/User",
-					"protocol": "http",
+					"raw": "https://localhost:7019/api/User",
+					"protocol": "https",
 					"host": [
-						"127.0.0.1"
+						"localhost"
 					],
-					"port": "5019",
+					"port": "7019",
 					"path": [
 						"api",
 						"User"
@@ -90,12 +90,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5019/api/User",
-					"protocol": "http",
+					"raw": "https://localhost:7019/api/User",
+					"protocol": "https",
 					"host": [
-						"127.0.0.1"
+						"localhost"
 					],
-					"port": "5019",
+					"port": "7019",
 					"path": [
 						"api",
 						"User"
@@ -136,12 +136,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5019/api/User",
-					"protocol": "http",
+					"raw": "https://localhost:7019/api/User",
+					"protocol": "https",
 					"host": [
-						"127.0.0.1"
+						"localhost"
 					],
-					"port": "5019",
+					"port": "7019",
 					"path": [
 						"api",
 						"User"
@@ -190,12 +190,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5019/api/Auth",
-					"protocol": "http",
+					"raw": "https://localhost:7019/api/Auth",
+					"protocol": "https",
 					"host": [
-						"127.0.0.1"
+						"localhost"
 					],
-					"port": "5019",
+					"port": "7019",
 					"path": [
 						"api",
 						"Auth"
@@ -231,12 +231,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5019/api/Product",
-					"protocol": "http",
+					"raw": "https://localhost:7019/api/Product",
+					"protocol": "https",
 					"host": [
-						"127.0.0.1"
+						"localhost"
 					],
-					"port": "5019",
+					"port": "7019",
 					"path": [
 						"api",
 						"Product"
@@ -278,12 +278,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5019/api/Product",
-					"protocol": "http",
+					"raw": "https://localhost:7019/api/Product",
+					"protocol": "https",
 					"host": [
-						"127.0.0.1"
+						"localhost"
 					],
-					"port": "5019",
+					"port": "7019",
 					"path": [
 						"api",
 						"Product"
