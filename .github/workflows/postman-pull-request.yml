@@ -1,55 +1,33 @@
-# Name of the GitHub Actions
-name: Continuous Test
- 
-# Set the actions that triggers the workflo
+name: Acceptance Tests
+
 on:
-# Trigger the workflow on the push event, only in dev branch
   push:
-    branches: [ main ]
- 
- 
+
 jobs:
-  build:
+  e2e:
     runs-on: ubuntu-latest
- 
- 
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-       
- 
+
+    container: node:14-alpine
+
+    services:
+      mongo:
+        image: mongo
+        env:
+          MONGO_INITDB_DATABASE: hexagonal-blog
+        ports:
+          - 27017/tcp
+
     steps:
-      # Check out the repo, so the job can access it.  
       - uses: actions/checkout@v2
- 
- 
-      # Install Node on the runner
-      - name: Use Node.js ${{ matrix.node-version }}      
-        uses: actions/setup-node@v1
-       
-      # Install newman globally, the reporter for slack and install the html extra reporter
-      - name: Install newman
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Server and Test with Newman
         run: |
-         npm install -g newman
-         npm install -g newman-reporter-slackreporter
-         npm install -g newman-reporter-htmlextra
- 
- 
-      # Create directory to upload test results
-      - name: Make Directory for Test Results
-        run: mkdir -p testArtifacts
- 
- 
-      # Run postman collection
-      - name: Run Postman Collection        
-        run: |
-            dotnet build
-            cd Tests && newman run apitesting.postman_collection.json
-     
-      # Upload the reports to TestArtifacts directory
-      - name: Output the results
-        uses: actions/upload-artifact@v2
-        with:
-         name: Reports
-         path: testArtifacts
+              
+              dotnet build && cd Tests && npm run start & npm run
+        env:
+          MONGO_URL: mongodb://mongo:${{ job.services.mongodb.ports[27017] }}/hexagonal-blog
+          HOST_URL: http://localhost
+          PORT: 3000
