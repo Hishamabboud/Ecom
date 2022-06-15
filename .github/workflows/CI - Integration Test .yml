@@ -52,6 +52,4 @@ jobs:
     - name: Run the API and Postman's tests
       run: |
        - name: run postman tests
-         uses: matt-ball/newman-action@master
-          with:
-           collection: "apitesting.postman_collection.json
+         cd Tests && newman run apitesting.postman_collection.json
