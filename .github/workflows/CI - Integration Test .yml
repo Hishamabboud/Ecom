@@ -49,7 +49,16 @@ jobs:
     - name: start the app
       run: |
           docker run -d -p 3005:80 -v ${{ github.workspace }}/db.json:/data/db.json clue/json-server
-    - name: Run the API and Postman's tests
+    - name: run tests
       run: |
-       - name: run postman tests
-         cd Tests && newman run apitesting.postman_collection.json
+        dotnet run 
+        sleep 2
+        cd Tests && newman run apitesting.postman_collection.json
+        kill -9 `lsof -i:5000 -t`
+      env:
+        FLASK_ENV: development
+        API_HOST: 0.0.0.0
+        FLASK_APP: main.py
+        DB_NAME: ahm
+        DB_HOST: localhost
+        CI: true apitesting.postman_collection.json
