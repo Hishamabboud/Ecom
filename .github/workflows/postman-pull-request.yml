@@ -19,13 +19,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+      - name: Install Newman dependency
+        run: npm install --prefix Tests
       - name: Install Dependencies
         run: npm install
 
       - name: Run Server and Test with Newman
         run: |
-              dotnet build && cd Tests && newman run apitesting.postman_collection.json  && npm run start & npm run
+              cd Tests && newman run apitesting.postman_collection.json && npm run start & npm run
         env:
           MONGO_URL: mongodb://mongo:${{ job.services.mongodb.ports[27017] }}/hexagonal-blog
           HOST_URL: http://localhost
