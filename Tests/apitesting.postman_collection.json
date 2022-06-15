@@ -90,10 +90,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7019/api/User",
+					"raw": "https://127.0.0.1:7019/api/User",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "7019",
 					"path": [
@@ -136,10 +136,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/User",
+					"raw": "https://127.0.0.1:7019/api/User",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "7019",
 					"path": [
@@ -190,10 +190,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/Auth",
+					"raw": "https://127.0.0.1:7019/api/Auth",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "7019",
 					"path": [
@@ -231,10 +231,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7019/api/Product",
+					"raw": "https://127.0.0.1:7019/api/Product",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "7019",
 					"path": [
@@ -278,10 +278,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:7019/api/Product",
+					"raw": "https://127.0.0.1:7019/api/Product",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"127.0.0.1"
 					],
 					"port": "7019",
 					"path": [
