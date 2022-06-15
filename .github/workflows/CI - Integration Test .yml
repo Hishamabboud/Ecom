@@ -51,7 +51,6 @@ jobs:
           docker run -d -p 3005:80 -v ${{ github.workspace }}/db.json:/data/db.json clue/json-server
     - name: run tests
       run: |
-        sleep 2
         cd Tests && newman run apitesting.postman_collection.json
         kill -9 `lsof -i:5000 -t`
       env:
