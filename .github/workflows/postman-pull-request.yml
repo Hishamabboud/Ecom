@@ -1,33 +1,30 @@
-name: Acceptance Tests
-
+name: "Newman Tests"
 on:
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  e2e:
+  setUp:
     runs-on: ubuntu-latest
-
-    container: node:14-alpine
-
-    services:
-      mongo:
-        image: mongo
-        env:
-          MONGO_INITDB_DATABASE: hexagonal-blog
-        ports:
-          - 27017/tcp
-
+    container:
+      image: postman/newman
     steps:
-      - uses: actions/checkout@v2
-      - name: Install Newman dependency
-        run: npm install --prefix Tests
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run Server and Test with Newman
+      - uses: actions/checkout@v1
+      
+      - name: Build environment
         run: |
-              cd Tests && newman run apitesting.postman_collection.json && npm run start & npm run
-        env:
-          MONGO_URL: mongodb://mongo:${{ job.services.mongodb.ports[27017] }}/hexagonal-blog
-          HOST_URL: http://localhost
-          PORT: 3000
+          newman --version
+          npm install -g newman-reporter-htmlextra  
+      - name: Run Postman collection
+        run: |
+            cd Tests && newman run apitesting.postman_collection.json -e Environment.postman_environment -r htmlextra,cli --reporter-htmlextra-export ./testResults/htmlreport.html
+      
+      - name: Download a Report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+            name: report.html
+            path: testResults
