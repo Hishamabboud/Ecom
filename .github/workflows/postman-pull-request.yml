@@ -25,8 +25,7 @@ jobs:
 
       - name: Run Server and Test with Newman
         run: |
-              
-              dotnet build && cd Tests && npm run start & npm run
+              dotnet build && cd Tests && newman run apitesting.postman_collection.json  && npm run start & npm run
         env:
           MONGO_URL: mongodb://mongo:${{ job.services.mongodb.ports[27017] }}/hexagonal-blog
           HOST_URL: http://localhost
