@@ -1,30 +1,17 @@
-name: "Newman Tests"
+name: Newman test
+
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  setUp:
+  newman:
     runs-on: ubuntu-latest
-    container:
-      image: postman/newman
     steps:
-      - uses: actions/checkout@v1
-      
-      - name: Build environment
+      - uses: actions/checkout@main
+      - uses: matt-ball/newman-action@main
+      - name: run tests
         run: |
-          newman --version
-          npm install -g newman-reporter-htmlextra  
-      - name: Run Postman collection
-        run: |
-            cd Tests && newman run apitesting.postman_collection.json -e Environment.postman_environment -r htmlextra,cli --reporter-htmlextra-export ./testResults/htmlreport.html
-      
-      - name: Download a Report
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-            name: report.html
-            path: testResults
+          cd Tests && newman run apitesting.postman_collection.json
+         
