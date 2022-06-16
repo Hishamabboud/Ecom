@@ -9,9 +9,10 @@ jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: matt-ball/newman-action@master
-      - name: run tests
-        run: |
-          cd Tests && newman run apitesting.postman_collection.json
+    - uses: actions/checkout@master
+    - uses: matt-ball/newman-action@master
+      with:
+       apiKey: ${{ secrets.postmanApiKey }}
+       collection: 21457316-610976e1-53e8-4d0a-a373-fa01c4197da6
+       environment: 21457316-7a6a3612-07ca-4515-942a-77cdeb4e3034
          
