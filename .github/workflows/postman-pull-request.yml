@@ -9,8 +9,8 @@ jobs:
   newman:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - uses: matt-ball/newman-action@main
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
       - name: run tests
         run: |
           cd Tests && newman run apitesting.postman_collection.json
