@@ -1,4 +1,4 @@
-name: Newman test
+name: Newman 
 
 on:
   push:
