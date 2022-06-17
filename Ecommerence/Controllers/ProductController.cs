@@ -9,7 +9,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Pluto.API.Controllers
+namespace Ecommerence.API.Controllers
 {
     public class ProductController : BaseController
     {
