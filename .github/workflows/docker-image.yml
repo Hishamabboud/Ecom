@@ -18,7 +18,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hisham14798/ecommerence:Project
+      run: docker build . --file Dockerfile --tag hisham14798/ecommerence:latest
       
     - name: Docker Push
       run: docker push hisham14798/ecommerence:latest
