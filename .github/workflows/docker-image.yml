@@ -21,4 +21,4 @@ jobs:
       run: docker build . --file Dockerfile --tag ecommerence:$(date +%s)
       
     - name: Docker Push
-      run: docker push hisham14798/ecommerence:tagname
+      run: docker push hisham14798/ecommerence:latest
